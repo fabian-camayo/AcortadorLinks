@@ -1,0 +1,36 @@
+.occult{
+    display: none !important;
+}
+.manifest{
+    display: block;
+}
+.cont-prin{
+    text-align: center;
+    margin-top: 10rem;
+}
+.btn-circle{
+    width: 7rem;
+    height: 7rem;
+}
+.inp-url{
+    margin: 2rem 0 1rem 0;
+}
+
+.btn-new{
+    align-self: center;
+    display: inline-grid;
+}
+.img-new{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.img-copy{
+    width: 3rem;
+    height: 3rem;
+}
+.btn-copy{
+    margin-top: 1rem;
+    border: 0.2rem #3b97d3 solid;
+    padding-top: 1.5rem;
+}

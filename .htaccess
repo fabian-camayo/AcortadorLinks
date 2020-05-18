@@ -1,0 +1,23 @@
+RewriteEngine On
+IndexIgnore *
+Options -Indexes
+
+RewriteCond %{HTTP_HOST} ^www\.acortadorLinks\.test$ [NC]
+RewriteRule ^(.*)$ http://acortadorLinks.test/$1 [R=301,QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.* - [L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([0-9-a-z-A-Z-_]+)$ go.php?id=$1 [L]
+
+ErrorDocument 400 /e.php
+ErrorDocument 401 /e.php
+ErrorDocument 403 /e.php
+ErrorDocument 404 /e.php
+ErrorDocument 405 /e.php
+ErrorDocument 500 /e.php
+ErrorDocument 501 /e.php
+ErrorDocument 502 /e.php
+ErrorDocument 503 /e.php
+ErrorDocument 504 /e.php
+ErrorDocument 505 /e.php
